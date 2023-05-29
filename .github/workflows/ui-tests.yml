@@ -44,6 +44,6 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Cypress run
-        uses: cypress-io/github-action@v2.2.7
+        uses: cypress-io/github-action@v2
         with:
           start: npm start
