@@ -17,11 +17,12 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
+    "start": "cross-env SKIP_PREFLIGHT_CHECK=true react-scripts start",
     "build": "SKIP_PREFLIGHT_CHECK=true react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
+    "cypress": "cypress open",
     "build-storybook": "storybook build",
     "test-storybook": "test-storybook",
     "chromatic": "npx chromatic --project-token=chpt_7164946d36b9b81"
@@ -67,6 +68,7 @@
     "@storybook/test-runner": "^0.10.0",
     "@storybook/testing-library": "^0.1.0",
     "chromatic": "^6.17.4",
+    "cypress": "^12.13.0",
     "msw": "^1.2.1",
     "msw-storybook-addon": "^1.8.0",
     "storybook": "7.0.18"
