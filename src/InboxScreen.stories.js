@@ -53,7 +53,7 @@ PinTask.play = async ({ canvasElement }) => {
   // Click the pin button
   await userEvent.click(pinButton);
 
-  // Check that the pin button is now a unpin button
+  // Check that the pin button is now a unpin butto
   const unpinButton = within(itemToPin).getByRole('button', { name: 'unpin' });
   await expect(unpinButton).toBeInTheDocument();
 };
